@@ -331,6 +331,34 @@ theorem hD_one_ge : (269 : ℝ) / 400 ≤ Zeta23.ThmD.HD 1 := by
   unfold Zeta23.ThmD.HD
   linarith [one_div_cStar_one_le]
 
+/-- `cStar 1` is verbatim the verifier challenge's `cMT` (its §3 definition, quoted here so the
+bridge can be read against the trusted statement without importing it):
+
+`cMT := √2·tan(1/√2) / (1 + (1/√2)·tan(1/√2))`. -/
+theorem cStar_one_eq_cMT :
+    Zeta23.ThmD.cStar 1 =
+      Real.sqrt 2 * Real.tan (1 / Real.sqrt 2) /
+        (1 + 1 / Real.sqrt 2 * Real.tan (1 / Real.sqrt 2)) := by
+  rw [cStar_one_eq]
+  have hu : (1 : ℝ) / Real.sqrt 2 = u := rfl
+  rw [hu, sqrt2_mul_tan]
+  simp only [sval]
+
+/-- **`1/cMT ≤ 531/400`** in the verifier challenge's own expression. -/
+theorem one_div_cMT_le :
+    1 / (Real.sqrt 2 * Real.tan (1 / Real.sqrt 2) /
+        (1 + 1 / Real.sqrt 2 * Real.tan (1 / Real.sqrt 2))) ≤ 531 / 400 := by
+  rw [← cStar_one_eq_cMT]
+  exact one_div_cStar_one_le
+
+/-- **`2 − 1/cMT ≥ 269/400`** — the challenge's Theorem-D proportion, at the exact rational. -/
+theorem two_sub_one_div_cMT_ge :
+    (269 : ℝ) / 400 ≤
+      2 - 1 / (Real.sqrt 2 * Real.tan (1 / Real.sqrt 2) /
+        (1 + 1 / Real.sqrt 2 * Real.tan (1 / Real.sqrt 2))) := by
+  rw [← cStar_one_eq_cMT]
+  linarith [one_div_cStar_one_le]
+
 /-- The `≥`-oriented restatement, matching the wording of the reduction notes. -/
 example : H ≥ (269 : ℝ) / 400 := h_ge_269_400
 
@@ -342,6 +370,9 @@ example : H ≥ (269 : ℝ) / 400 := h_ge_269_400
 #print axioms H269.cStar_one_ge
 #print axioms H269.one_div_cStar_one_le
 #print axioms H269.hD_one_ge
+#print axioms H269.cStar_one_eq_cMT
+#print axioms H269.one_div_cMT_le
+#print axioms H269.two_sub_one_div_cMT_ge
 
 end H269
 

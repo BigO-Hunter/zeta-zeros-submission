@@ -15,6 +15,9 @@ In this package's own formulation (`BigOSpeedrun.CriticalLineZeros.H`,
 | `H269.cStar_one_ge` | `400/531 ≤ Zeta23.ThmD.cStar 1` (the `cMT` of the paper at λ = 1) |
 | `H269.one_div_cStar_one_le` | `1 / Zeta23.ThmD.cStar 1 ≤ 531/400` (the `1/cMT` form) |
 | `H269.hD_one_ge` | `269/400 ≤ Zeta23.ThmD.HD 1` (the Theorem-D form `2 − 1/cMT`) |
+| `H269.cStar_one_eq_cMT` | `cStar 1` **is** the verifier challenge's `cMT` (its §3 expression, quoted) |
+| `H269.one_div_cMT_le` | `1/cMT ≤ 531/400` in the challenge's own expression |
+| `H269.two_sub_one_div_cMT_ge` | `269/400 ≤ 2 − 1/cMT` — the challenge's Theorem-D proportion |
 | `Race.bound_269_400` | `∀ ε > 0, ∃ T₀, ∀ T ≥ T₀, (269/400 − ε)·N(T) ≤ N₀ˢ(T)` |
 | `Race.h_ge_269_400_via_HD` | `269/400 ≤ H` again through `H_eq_HD` + `hD_one_ge` |
 
