@@ -3,3 +3,4 @@
 *.ilean
 *.trace
 .DS_Store
+.route_watch_state
