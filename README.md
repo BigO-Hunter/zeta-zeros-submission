@@ -21,7 +21,7 @@ statement minus its target and recheck `Submission.lean`.
 Proof and counting definitions: Anthropic (Claude), Levent Alpöge and Ralph
 Furman, [`anthropics/formal-math`](https://github.com/anthropics/formal-math)
 commit `16a5ce41304fcdaea4e0be7c132e1c361dc26da5`, directory `zeta23`,
-Apache-2.0 (see `LICENSE` and `NOTICE`). Packaging and independent replay:
+Licensed under the CFSF License (see `LICENSE` and `NOTICE`; ([github.com/darkhipo/cfsf](https://github.com/darkhipo/cfsf))). Packaging and independent replay:
 MultiAgency swarm.
 
 Native pins: Lean **v4.33.0-rc2**, Mathlib
