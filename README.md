@@ -21,7 +21,7 @@ statement minus its target and recheck `Submission.lean`.
 Proof and counting definitions: Anthropic (Claude), Levent Alpöge and Ralph
 Furman, [`anthropics/formal-math`](https://github.com/anthropics/formal-math)
 commit `16a5ce41304fcdaea4e0be7c132e1c361dc26da5`, directory `zeta23`,
-Licensed under the CFSF License (see `LICENSE` and `NOTICE`; ([github.com/darkhipo/cfsf](https://github.com/darkhipo/cfsf))). Packaging and independent replay:
+Licensed under the CFSF License (see `LICENSE` and `NOTICE`; [github.com/darkhipo/cfsf](https://github.com/darkhipo/cfsf)). Packaging and independent replay:
 MultiAgency swarm.
 
 Native pins: Lean **v4.33.0-rc2**, Mathlib
@@ -45,3 +45,13 @@ lake env lean Submission.lean
 
 No RH assumption and no `sorry` occurs in the proof chain. The official verifier
 has not run this draft; its final statement and pins may differ.
+
+---
+
+## Why this repo is up
+
+Public draft evidence: the complete draft package (9016-job build green, axiom-clean) shows exactly what a critical-line-zeros submission will look like while the route is closed.
+
+## What work can be done here
+
+Route not open (verifier#146). Open work: swap the statement surface when the route opens and recheck; local replay of the 9016-job build meanwhile.
