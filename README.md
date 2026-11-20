@@ -55,3 +55,7 @@ Public draft evidence: the complete draft package (9016-job build green, axiom-c
 ## What work can be done here
 
 Route not open (verifier#146). Open work: swap the statement surface when the route opens and recheck; local replay of the 9016-job build meanwhile.
+
+## Umbrella: proposal and draft submission
+
+The repository root remains the active draft submission described above. `proposal/` contains the complete original `zeta-zeros-proposal` repository at source commit `9d711e2659768c34e4d9b1c49a9a5a94f4f2a70d`, merged with full history. It is design background, not a second submission and not evidence that the route is open.
