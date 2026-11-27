@@ -16,6 +16,14 @@ its definitions-only copy excludes the deliberate `sorry` challenge theorem.
 When the route opens, replace `Submission/KappaStarRow.lean` with the official
 statement minus its target and recheck `Submission.lean`.
 
+## Contents
+
+- `Submission/` — 318 modules: the complete Zeta23 library plus the proposed
+  definitions (only import paths prefixed with `Submission.`).
+- `proposal/` — the original `zeta-zeros-proposal` repository at source commit
+  `9d711e2659768c34e4d9b1c49a9a5a94f4f2a70d` (full history): design background for
+  the draft submission.
+
 ## Provenance and build
 
 Proof and counting definitions: Anthropic (Claude), Levent Alpöge and Ralph
@@ -25,9 +33,7 @@ Licensed under the CFSF License (see `LICENSE` and `NOTICE`; [github.com/darkhip
 MultiAgency swarm.
 
 Native pins: Lean **v4.33.0-rc2**, Mathlib
-`51e6992efd06126df61a496bebf8f49482a4e129`. The 318 modules under
-`Submission/` are the complete Zeta23 library plus the proposed definitions;
-only import paths were prefixed with `Submission.`.
+`51e6992efd06126df61a496bebf8f49482a4e129`.
 
 ```sh
 lake exe cache get
@@ -46,16 +52,8 @@ lake env lean Submission.lean
 No RH assumption and no `sorry` occurs in the proof chain. The official verifier
 has not run this draft; its final statement and pins may differ.
 
----
-
-## Why this repo is up
-
-Public draft evidence: the complete draft package (9016-job build green, axiom-clean) shows exactly what a critical-line-zeros submission will look like while the route is closed.
-
 ## What work can be done here
 
 Route not open (verifier#146). Open work: swap the statement surface when the route opens and recheck; local replay of the 9016-job build meanwhile.
 
-## Umbrella: proposal and draft submission
-
-The repository root remains the active draft submission described above. `proposal/` contains the complete original `zeta-zeros-proposal` repository at source commit `9d711e2659768c34e4d9b1c49a9a5a94f4f2a70d`, merged with full history. It is design background, not a second submission and not evidence that the route is open.
+Part of [BigO-Hunter](https://github.com/BigO-Hunter) — independent verification and packaging for [Big O Speedrun](https://bigospeedrun.com) · [org profile](https://github.com/BigO-Hunter/.github) · [bigo-hunter.github.io](https://bigo-hunter.github.io).
