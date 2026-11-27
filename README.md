@@ -5,6 +5,8 @@ Root target: `Race.bound`, proving κ* ≥ H with
 The proof delegates to `Zeta23.ThmD.thmD₀_simple_mult_cumulative`; the only new
 mathematics is the exact constant adapter `H_eq_HD`.
 
+> Board (Nov 26 2026): the critical-line race is OPEN, currently led by H. M. Bui + 2 more's claimed κ* ≥ 0.703703 (Nov 20); this repo is a draft replay of Anthropic's κ* ≥ 3/2 − cot(1/√2)/√2 — see [bigospeedrun.com](https://bigospeedrun.com).
+
 ## Status
 
 **Draft, not submitted.** On 2026-11-04 the maintainer wrote in
